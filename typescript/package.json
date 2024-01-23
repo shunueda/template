@@ -1,0 +1,26 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Shun Ueda <62182668+shunueda@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node --no-warnings --trace-uncaught --loader @swc-node/register/esm src/index.ts",
+    "format": "prettier --ignore-path .gitignore \"**/*.+(ts|js|tsx)\" --write"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.6.8",
+    "@swc/core": "^1.3.78",
+    "@swc/helpers": "^0.5.3",
+    "@swc/register": "^0.1.10",
+    "@types/node": "^20.10.4",
+    "dotenv": "^16.3.1",
+    "prettier": "^3.2.4",
+    "regenerator-runtime": "^0.14.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "typescript": "latest"
+  }
+}
